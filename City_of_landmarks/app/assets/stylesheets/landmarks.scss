@@ -1,0 +1,49 @@
+// Place all the styles related to the landmarks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #339867;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+#page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 800px;
+}
+
+h1 {
+  color: #FFFF33;
+  text-align: center;
+  font: italic 3.5em fantasy;
+  text-align: center;
+}
+
+h1 > a {
+  color: #FFFF33;
+}
+
+h1:hover {
+  font-weight: bold;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  background-color: #FFAA33;
+  color: #333300;
+  text-align: right;
+  border: 3px groove #FF6633;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a:link {
+  text-decoration: none;
+}

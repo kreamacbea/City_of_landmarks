@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>City with Landmarks</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="page-wrapper">
+
+    <%= yield %>
+
+      <br><br>
+
+      <hr>
+
+      <%= link_to "[All Landmarks]", root_path %>
+      <br>
+      <%= link_to "[All Cities]", cities_path %>
+
+    </div><!-- ./page-wrapper -->
+  </body>
+</html>

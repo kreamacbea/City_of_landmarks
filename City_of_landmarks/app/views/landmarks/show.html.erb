@@ -1,0 +1,11 @@
+<h1><%= @landmark.name %></h1>
+
+<p>Kind: <%= @landmark.kind %></p>
+<p>Build year: <%= @landmark.build_year %></p>
+<p>City: <%= @landmark.city.name %></p>
+<p>Entrance Fee? <%= @landmark.entrance_fee %></p>
+<%= image_tag @landmark.image_url %>
+
+<%= link_to '[Edit]', edit_landmark_path(@landmark) %> |
+<%= link_to "[Delete]", landmark_path(@landmark.id), method: 'delete', data: { confirm: "Are you sure?" } %>
+<%= link_to '[Back]', landmarks_path %>

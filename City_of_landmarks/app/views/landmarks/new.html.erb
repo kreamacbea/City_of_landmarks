@@ -1,0 +1,25 @@
+<h1>Add Landmarks I visited</h1>
+
+<%= form_for @landmark do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :kind %>
+  <%= f.text_field :kind %>
+  <br>
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+  <br>
+  <%= f.label :build_year %>
+  <%= f.text_field :build_year %>
+  <br>
+  <%= f.label :entrance_fee %>
+  <%= f.text_field :entrance_fee %>
+  <br>
+  <%= f.label :city_name %>
+  <%= f.text_field :city_name %>
+  <br>
+  <br>
+
+  <%= f.submit "Create" %>
+<% end %>

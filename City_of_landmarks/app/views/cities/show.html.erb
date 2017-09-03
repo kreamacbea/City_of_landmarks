@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @city.name %>
+</p>
+
+<h4>List of Landmarks</h4>
+
+<% if @city.landmarks.any? %>
+  <ul>
+    <% @city.landmarks.each do |landmark| %>
+      <li><%= landmark.name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no landmarks in this city.</p>
+<% end %>
+
+<%= link_to '[Edit]', edit_city_path(@city) %> |
+<%= link_to "[Delete]", city_path(@city.id), method: :delete, data: { confirm: "Are you sure?" } %> |
+<%= link_to '[Back]', cities_path %>

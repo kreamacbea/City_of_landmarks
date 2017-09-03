@@ -1,0 +1,17 @@
+<%= form_for @city do |f| %>
+
+<ul>
+  <% @city.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ul>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit (@city.new_record? ? "Create" : "Update") %>
+
+  <%= f.label :city_id %>
+  <%= f.collection_select(:city_id, City.all, :id, :name) %>
+
+<% end %>
